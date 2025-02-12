@@ -1,14 +1,25 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
-  },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true,
+
+		"allowJs": true,
+		"checkJs": true
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.js",
+		"cities/**/*.ts",
+		"cities/**/*.js",
+		"details/**/*.ts",
+		"details/**/*.js",
+		"history/**/*.ts",
+		"history/**/*.js"
+	]
 }
