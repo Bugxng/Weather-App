@@ -1,7 +1,26 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import {defineConfig} from "vite";
+import {dirname, resolve} from "node:path";
+import {fileURLToPath} from "node:url";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
-})
+	build: {
+		rollupOptions: {
+			input: {
+				index: resolve(dirname(fileURLToPath(import.meta.url)), "index.html"),
+				cities: resolve(
+					dirname(fileURLToPath(import.meta.url)),
+					"cities/index.html"
+				),
+				history: resolve(
+					dirname(fileURLToPath(import.meta.url)),
+					"history/index.html"
+				),
+				detail: resolve(
+					dirname(fileURLToPath(import.meta.url)),
+					"detail/index.html"
+				),
+			},
+		},
+	},
+});

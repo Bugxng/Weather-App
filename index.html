@@ -1,13 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="/src/home.css" />
+	</head>
+	<body>
+		<div id="app">
+			<h1>Weather Forecast</h1>
+			<div class="weather-card">
+				<div class="text-center mb-8">
+					<h2 class="text-2xl font-semibold mb-2">Beijing</h2>
+					<div class="text-6xl font-bold mb-4">25°C</div>
+					<p class="text-xl">Sunny</p>
+				</div>
+				<div class="grid grid-cols-2 gap-4 mb-8">
+					<div class="text-center">
+						<p class="text-gray-600 dark:text-gray-400">Humidity</p>
+						<p class="font-semibold">45%</p>
+					</div>
+					<div class="text-center">
+						<p class="text-gray-600 dark:text-gray-400">Wind Speed</p>
+						<p class="font-semibold">12 km/h</p>
+					</div>
+				</div>
+				<div class="flex justify-center gap-4">
+					<button class="btn" id="view-detail-id">View Details</button>
+					<button class="btn" id="cities-id">Manage Cities</button>
+					<button class="btn" id="history-id">View History</button>
+				</div>
+			</div>
+			<div id="forcast-card">
+				<div class="weather-card mt-8">
+					<h3 class="">5-Day Forecast</h3>
+					<div class="">
+						<div class="r">
+							<p class="">Tue</p>
+							<p class="">26°C / 18°C</p>
+							<p>Sunny</p>
+						</div>
+						<div class="">
+							<p class="">Wed</p>
+							<p class="">24°C / 17°C</p>
+							<p>Cloudy</p>
+						</div>
+						<div class="">
+							<p class="">Thu</p>
+							<p class="">23°C / 16°C</p>
+							<p>Rain</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/src/main.js"></script>
+	</body>
 </html>
