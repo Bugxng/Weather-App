@@ -1,0 +1,74 @@
+body{
+  color: aliceblue;
+  background-color: #070c24f9;
+}
+
+div.weather-card{
+  background-color: #27334450;
+  border-radius: 23px;
+  margin: 30px 80px;
+  padding: 20px;
+}
+
+div.text-3xl {
+  display: flex;          /* 启用 Flex 布局 */
+  gap: 220px;             /* 盒子间距（可选） */
+  /* justify-content: center; 控制整体水平位置（可选） */
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  
+}
+
+p.content{
+  height: 40px;
+  color: #9a9ca5f9;
+}
+
+div.data{
+  line-height: 50px;
+  
+}
+
+h2{
+    line-height: 1px;
+    padding-left: 10px;
+}
+
+div.data1{
+  /* text-align: center; */
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1px;
+}
+
+div.card1{
+  height: 130px;
+}
+
+div.life-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 两列等宽 */
+  gap: 20px;                     /* 盒子间距 */
+  padding-left: 10px;
+}
+
+div.text {
+  height: 70px;
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #9fa2ad30;
+  border-radius: 14px;
+  padding-left: 20px;
+  line-height: 1;
+}
+
+p.content1{
+  color: #9a9ca5f9;
+  margin-bottom: 10px;
+}
+
+div.text1{
+  margin-bottom: 14px;
+}

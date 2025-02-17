@@ -1,0 +1,62 @@
+body{
+  color: white;
+  background-color: #070c24f9;
+}
+
+div.entre{
+  background-color: #27334450;
+  border-radius: 10px;
+  margin: 30px 80px;
+  padding: 20px;
+}
+
+h2{
+  line-height: 1px;
+  padding-left: 2px;
+}
+
+
+  div.card {
+    display: flex;
+    flex-direction: column; /* 垂直排列盒子 */
+    gap: 10px; /* 盒子间距 */
+    /* border-radius: 14px; */
+  }
+  
+  div.data {
+    display: flex;
+    justify-content: space-between; /* 左右分列 */
+    width: 98%; /* 确保盒子占满宽度 */
+    background-color:  #9fa2ad30;
+    padding-left: 20px;
+    border-radius: 14px;
+  }
+  
+  div.tem1 {
+    text-align: left; /* 左侧文本左对齐 */
+    /* line-height: 1; */
+  }
+  
+  div.tem2 {
+   text-align: right;
+   padding-right: 20px;
+    /* line-height: 1; */
+  }
+
+  p,div.condition{
+    line-height: 0.3;
+  }
+
+  div.weather,div.consition{
+    margin-bottom: 11px;
+    line-height: 10px;
+  }
+
+  div.weather,div.condition{
+    color: #9a9ca5f9;
+  }
+
+  p.w{
+    font-weight: bold;
+    
+  }

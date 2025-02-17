@@ -1,26 +1,31 @@
 body{
   background-color: #070c24f9;
+  color: white;
 }
 
 h1{
-  color: aliceblue;
+  /* color: aliceblue; */
   padding-inline: 30px;
   padding-left: 83px;
   line-height: 45px;
 }
 
+p.text-xl{
+  margin: 2px 3px;
+}
+
 h2{
-  color: aliceblue;
+  /* color: aliceblue; */
   line-height: 1px;
 }
 
 div.mb-4{
   font-size: 60px;
-  
+  font-weight: bold;
 }
 
 div.weather-card{
-  color: aliceblue;
+  /* color: aliceblue; */
   background-color: #27334450;
   border-radius: 23px;
   margin: 30px 80px;
@@ -33,14 +38,14 @@ div.text-center{
 
 div.grid{
     display: flex;          /* 启用 Flex 布局 */
-    gap: 30px;             /* 盒子间距（可选） */
+    gap: 300px;             /* 盒子间距（可选） */
     /* justify-content: center; 控制整体水平位置（可选） */
   }
 
 div.text-center1{
-  padding-left: 320px;
+  padding-left: 250px;
   margin: 10px 13px;
-  line-height: 10px;
+  line-height: 14px;
 }
 
 p.font-semibold{
@@ -48,20 +53,30 @@ p.font-semibold{
 }
 
 div.flex {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 两列等宽 */
-  gap: 100px;                     /* 盒子间距 */
+  display: flex;          /* 启用 Flex 布局 */
+  gap: 30px;             /* 盒子间距（可选） */
+  justify-content: center; /* 控制整体水平位置（可选） */
+  
 }
 
 button.btn {
   color: aliceblue;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 16px;
   background-color: #3b82f6;
   border: none;
   border-radius: 14px;
+  /* flex: ;               盒子均分剩余空间（或设固定宽度） */
+  min-width: 00px;      /* 最小宽度避免挤压（可选） */
+  height: 50px;         /* 盒子高度 */
+  margin: 5px px;
+  width: 170px;
+  
+  /* 盒子内部内容居中 */
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+  align-items: center;      /* 垂直居中 */
+  
+  /* border: 1px solid #333;  可选样式 */
 }
 
 h3{
@@ -69,15 +84,22 @@ h3{
   padding-left: 10px;
 }
 
-div.r,div.s,div.t {
+div.r {
   display: inline-block;  /* 行内块水平排列 */
   width: 300px;
-  height: 140px;
+  height: 115px;
   margin:10px;        /* 盒子间距*/
   padding-left: 50px;
+  padding-right: 50px;
   line-height: 15px;    /* 单行文本垂直居中（高度=line-height）*/
   text-align: center;    /* 文本水平居中 */
 }
 
 
+p.tem{
+  font-weight: bold;
+}
 
+p.text-gray-600{
+  color: #9a9ca5f9;
+}
