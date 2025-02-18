@@ -10,15 +10,22 @@
 		"noUncheckedSideEffectImports": true,
 
 		"allowJs": true,
-		"checkJs": true
+		"checkJs": true,
+		"paths": {
+			"@home/*": ["./src/*"],
+			"@cities/*": ["./cities/*"],
+			"@details/*": ["./details/*"],
+			"@history/*": ["./history/*"]
+		},
+		"rootDir": "./"
 	},
 	"include": [
 		"src/**/*.ts",
 		"src/**/*.js",
 		"cities/**/*.ts",
 		"cities/**/*.js",
-		"details/**/*.ts",
-		"details/**/*.js",
+		"detail/**/*.ts",
+		"detail/**/*.js",
 		"history/**/*.ts",
 		"history/**/*.js"
 	]

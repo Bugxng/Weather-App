@@ -1,6 +1,7 @@
 import {defineConfig} from "vite";
 import {dirname, resolve} from "node:path";
 import {fileURLToPath} from "node:url";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -23,4 +24,5 @@ export default defineConfig({
 			},
 		},
 	},
+	plugins: [tsconfigPaths()],
 });
