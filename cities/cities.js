@@ -1,11 +1,17 @@
 import {getAreas} from "@home/services/area";
 import Handlebars from "handlebars";
 
-Handlebars.compile("");
-
 const app = document.querySelector("#app");
 
 function run() {
+	getAreas().then((areas) => {
+		render(areas);
+	});
+}
+
+run();
+
+function render(areas) {
 	const source = document.getElementById("city-item-template")?.innerHTML;
 	if (!source) {
 		console.error(new Error("city-item-template模板不存在"));
@@ -26,12 +32,4 @@ function run() {
 	} else {
 		console.error(new Error("app元素不存在"));
 	}
-
-	// getAreas().then((areas) => {
-	// 	template({
-	// 		areas,
-	// 	});
-	// });
 }
-
-run();
